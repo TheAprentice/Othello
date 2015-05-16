@@ -6,13 +6,10 @@
 	<link rel='stylesheet' type='text/css' href='lib/ld29.css'>
 	<script src="lib/jquery-2.1.0.min.js"></script>
 	<script src="js/main.js"></script>
-
-<!-- it would be nice if we could have these loaded from main.js -terry -->
-<!-- It would have been painful and taken forever to debug. For someone who hates libraries, like JQuery, you seem to love loading like a library -tim -->
-	<script type="text/javascript" src="js/main.js"></script>
+	<script src="js/sound_manager.js"></script>
 </head>
 
-<body>
+<body onload='new SoundManager().playMusic("assets/audio/Dark_Lotus.mp3");'>
 	<div id="container">
 		<div id="wrapper">
 			<div id="title">
