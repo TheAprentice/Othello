@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Othello</title>
+	<meta name="description" content="Remake of classic board game" />
+	<link rel='stylesheet' type='text/css' href='lib/ld29.css'>
+	<script src="lib/jquery-2.1.0.min.js"></script>
+	<script src="js/main.js"></script>
+
+<!-- it would be nice if we could have these loaded from main.js -terry -->
+<!-- It would have been painful and taken forever to debug. For someone who hates libraries, like JQuery, you seem to love loading like a library -tim -->
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+	<div id="container">
+		<div id="wrapper">
+			<div id="title">
+				<h1>Othello</h1>
+				<div id="error">
+					     Error loading, please try again
+					<span id="errReason">Unknown reason.</span>
+					<noscript>
+						In order to play this game, Javascript MUST be enabled on your browser.
+						Please make an exception for this page in your javascript blocking extension.
+					</noscript>
+				</div>
+			</div>
+			<div id="sky"></div>
+			<div id="buildings"></div>
+		</div>
+	</div>
+</body>
+</html>
