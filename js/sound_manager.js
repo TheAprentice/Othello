@@ -56,6 +56,6 @@ sound_manager.js
 		return;
 	}
 	
-	//expose the SoundManager class
+	//expose the SoundManager 'class'
 	window.SoundManager = SoundManager;
 })();
