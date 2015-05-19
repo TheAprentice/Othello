@@ -2,52 +2,49 @@
  * This class is responcible for handling the majority of the actual workings of
  * the Othello game.
  */
+<script>
+ <script type="text/javascript">
 
-var Game = new (function() {
-  var self = this,
-      debug = document.location.hash == '#debug',
-      grid,
-      sizes = [8],
-      lastSize = 0,
-      currentPuzzle = null,
-      checkTOH = 0,
-      endGameTOH1,
-      endGameTOH2,
-      endGameTOH3,
-      endSubtleHintTOH,
-      onHomeScreen = true,
-      undoStack = [],
-      undone = false,
-      gameEnded = false;
+ var row, col, val;
 
-function init() {
-  $('#scorenr').html(getScore());
-  $('#tweeturl, #facebook').hide();
+ function CreateMultiArray()
 
-  if (!window.isWebApp)
-    $('#app').hide();
+ //This function creates and fills the array
 
-  if (Utils.isTouch())
-    $('html').addClass('touch');
+ {
 
-          $('[data-size]').each(function(i,el){
-            var $el = $(el),
-                size = $el.attr('data-size') * 1,
-                label = sizes[size - 1];
-            $el.html(label)
-            $el.on('touchstart mousedown', function(evt){
-              if (Utils.isDoubleTapBug(evt)) return false;
-              var size = sizes[$(evt.target).closest('[data-size]').attr('data-size') * 1 - 1];
-              loadGame(size);
-            })
-          })
-          resize();
-          $(window).on('resize', resize);
-          $(window).on('orientationchange', resize);
+   MultiArray = new Array(8)
 
-          showTitleScreen();
-          resize();
+   MultiArray [0] = new Array(8)
 
-          var colors = ['#a7327c', '#c24b31', '#c0cd31']
-          Utils.setColorScheme(colors[1]);
-        }
+   MultiArray[3][3] = "Black"
+
+   MultiArray[3][4] = "White"
+
+   MultiArray[4][3] = "White"
+
+   MultiArray[4][4] = "Black"
+
+   for (i = 0, i < 8; i++) {
+     for (j = 0, len = cars.length, text = ""; i < 8; i++) {
+        if(MultiArray[i][j] != "Black" && MultiArray[i][j] != "White")
+          MultiArray[i][j] = "Green";
+     }
+   }
+ }
+
+ function getArray(row,col){
+
+   return MultiArray[row][col];
+
+ }
+
+ function putArray(row, col, val){
+
+   MultiArray[row][col] = val;
+
+ }
+ function draw(){
+  for(i = 0, )
+ }
+ </ script>
