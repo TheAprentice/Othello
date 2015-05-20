@@ -31,6 +31,7 @@
           MultiArray[i][j] = "Green";
      }
    }
+   this.draw();
  }
 
  function getArray(row,col){
@@ -45,6 +46,8 @@
 
  }
  function draw(){
-  for(i = 0, )
+  //draw the board, with all the squares on it. Not sure what's best to use here, or how to link it to the MultiArray
+  //put listeners on
+  //change the color of the squars on mouseover
  }
  </ script>
