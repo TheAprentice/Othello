@@ -5,11 +5,10 @@
 	<title>Othello</title>
   <link rel='stylesheet' type='text/css' href='css/style.css' />
   <link href="fonts/fonts.css" type="text/css" rel="stylesheet" />
-	<script src="js/sound_manager.js"></script>
-<!-- <script type="text/javascript" src="js/main.js"></script> -->
+	<script type="text/javascript" src="js/sound_manager.js"></script>
+  <script type="text/javascript" src="js/game.js"></script>
 </head>
-
-<body onload='new SoundManager().playMusic("assets/audio/Dark_Lotus.mp3");'>
+<body bgcolor="#3CB371" onload='new SoundManager().playMusic("assets/audio/Dark_Lotus.mp3");'>
    <script>
         var WebFontConfig = {
             custom: {
@@ -23,8 +22,12 @@
     </script>
 
 	  <h1 id="titleheader" align="center">Othello</h1>
-    <p>Remake of classic board game</p>
-    <!--<div id="titlegrid" class="board">
+    <h2 id="maingame" type="game" align="center"></h2>
+		<FORM>
+				<INPUT type="button" value="Start New Game" name="newgame" onClick=game.init(); return truew>
+		</FORM>
+		<!--<p>Remake of classic board game</p>-->
+		<!--<div id="titlegrid" class="board">
 			<div id="error">
          <span>"Error loading, please try again"</span>
          <span id="errReason">Unknown reason.</span>
